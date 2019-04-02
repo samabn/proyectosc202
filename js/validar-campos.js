@@ -86,7 +86,6 @@ function hide(container) {
 }
 
 function saveUser() {
-    console.log("name=" + NAME.value + "&address=" + ADDRESS.value + "&mail=" + EMAIL.value + "&tel=" + TEL.value + "&user=" + USER.value + "&pass=" + PASS.value);    
     let xhr = new XMLHttpRequest();
     xhr.open('POST', '../controller/CreateUser.php', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

@@ -34,7 +34,7 @@
             
             if(!oci_execute($this->ociparse)) {
                 $this->error = oci_error($this->ociparse);
-                $this->error = "Al tratar de insertar los datos se produjo el error: " . $this->error['message'] . $name . $address . $mail . $tel . $user . $pass;
+                $this->error = "Al tratar de insertar los datos se produjo el error: " . $this->error['message'];
                 return false;
             } else {
                 return true;
