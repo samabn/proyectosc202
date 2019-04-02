@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/formulario-login.css">
+    <title>Inicio de sesión</title>
+</head>
+<body>
+    <div class="container-msj" id="container-msj"><span class="msj" id="msj"></span></div>
+    <main class="main">
+        <div class="divTitulo">
+            <h1 class="titulo">Inicio de sesión</h1>
+        </div>
+        <form action="../controller/LoginCtrl.php" method="POST" name="form">
+            <div class="container-input">
+                <label for="user" class="label-input">Usuario:</label>
+                <input type="text" name="user" id="user" class="inputField">
+            </div>
+            <div class="container-input">
+                <label for="pass" class="label-input">Contraseña:</label>
+                <input type="password" name="pass" id="pass" class="inputField passField">
+            </div>
+            <button class="btn" id="submit">Iniciar sesión</button>
+            <a href="register.html" class="btn btnRegister">
+                Crear cuenta
+            </a>
+        </form>
+    </main>    
+    <!-- <script type="text/javascript" src="../js/sweetalert2.all.min.js"></script> -->
+    <script src="../js/crypto-js.js"></script>
+    <script src="../js/aes.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</body>
+</html>

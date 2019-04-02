@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Registro de usuarios</title>
+</head>
+<body>
+    <div class="container-msj" id="container-msj"><span class="msj" id="msj"></span></div>
+    <main class="main">        
+        <form action="../controller/UsersCtrl.php" method="POST" class="form" name="form">            
+            <h2 class="h2">Registro de usuario</h2>
+            <div class="container-input">
+                <label for="name" class="label-input" id="label-name">Nombre:</label>
+                <input type="text" name="name" class="input-field" id="name">
+            </div>
+            <div class="container-input">
+                <label for="address" class="label-input" id="">Dirección:</label>
+                <input type="text" name="address" class="input-field" id="address">
+            </div>            
+            <div class="container-input">
+                <label for="email" class="label-input" id="">Correo:</label>
+                <input type="text" name="mail" class="input-field" id="email">
+            </div>            
+            <div class="container-input">
+                <label for="tel" class="label-input" id="">Télefono:</label>
+                <input type="text" name="tel" class="input-field" id="tel">
+            </div>            
+            <div class="container-input">
+                <label for="user" class="label-input" id="">Usuario:</label>
+                <input type="text" name="user" class="input-field" id="user">
+                <span class="msj" id="msj-user"></span>
+            </div>            
+            <div class="container-input">
+                <label for="pass1" class="label-input" id="">Contraseña:</label>
+                <input type="password" name="pass" id="pass" class="input-field">
+            </div>            
+            <div class="container-input">
+                <label for="pass2" class="label-input" id="">Repite contraseña:</label>
+                <input type="password" name="pass2" id="pass2" class="input-field last-input">
+            </div>            
+            <button type="submit" class="btn-submit" id="btn-submit">Enviar</button>
+        </form>
+    </main>
+    <script src="../js/crypto-js.js"></script>
+    <script src="../js/aes.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>
