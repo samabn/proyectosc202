@@ -12,6 +12,7 @@
             $usuario->setNombre($name);
             $usuario->setDireccion($address);
             $usuario->setCorreo($mail);
+            $usuario->setTelefono($tel);
             $usuario->setUsuario($user);
             $usuario->setPassword($pass);
             $usersmodel = new UsersModel();
